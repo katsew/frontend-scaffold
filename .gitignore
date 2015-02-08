@@ -5,6 +5,7 @@ coverage/
 log/
 styleguide/
 libs/
+tmp/
 *.log
 *.sublime-project
 *.sublime-workspace
