@@ -8,15 +8,15 @@ module.exports = function(config) {
     files: [
       'https://code.jquery.com/jquery-2.1.1.min.js',
       // 'front/assets/coffee/*.coffee',
-      'front/spec/*.spec.coffee',
-      'front/spec/fixture/*.html',
+      'test/spec/*.spec.coffee',
+      'test/spec/fixture/*.html',
       {
-        pattern: 'front/tmp/js/sample.js',
+        pattern: 'test/tmp/js/sample.js',
         watched: false,
         include: false,
         served: false
       },
-      'front/tmp/js/*.js'
+      'test/tmp/js/*.js'
     ],
 
     // frameworks to use
@@ -24,7 +24,7 @@ module.exports = function(config) {
     frameworks: ['jasmine-jquery', 'jasmine-ajax', 'browserify', 'jasmine'],
 
     proxies: {
-        '/fixture/': 'http://localhost:9876/base/front/spec/fixture/'
+        '/fixture/': 'http://localhost:9876/base/test/fixture/'
     },
 
     // list of files to exclude
@@ -36,8 +36,8 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
         // 'front/assets/coffee/*.coffee': ['coffee'],
-        'front/spec/*.coffee': ['browserify'],
-        'front/tmp/js/*.js': ['coverage']
+        'test/spec/*.coffee': ['browserify'],
+        'test/tmp/js/*.js': ['coverage']
     },
 
     browserify: {
