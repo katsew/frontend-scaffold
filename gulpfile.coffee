@@ -12,10 +12,16 @@ gulp.task 'bower', () ->
 gulp.task 'server', () ->
   runSequence('easymock', 'browserSync')
 
+gulp.task 'clean', () ->
+  runSequence(
+    ['clean:css', 'clean:js', 'clean:tmp', 'clean:html', 'clean:image', 'clean:bower']
+  )
+
+
 gulp.task 'default', () ->
   runSequence(
-    'clean'
-    ['bower', 'image', 'sprite']
+    ['clean']
+    ['bower', 'imagemin']
     ['jade', 'stylus', 'coffee']
-    ['kss', 'test']
+    ['kss']
   )

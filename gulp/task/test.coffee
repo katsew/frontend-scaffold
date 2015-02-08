@@ -6,7 +6,7 @@ paths = require('../config').paths
 
 
 gulp.task 'fixture:gen', () ->
-  return gulp.src ["#{paths.src.fixture}/**/*.jade"]
+  gulp.src ["#{paths.src.fixture}/**/*.jade"]
     .pipe jade
       jade: rawJade
       pretty: true
@@ -16,4 +16,12 @@ gulp.task 'test', (done) ->
   karma.start({
     configFile: __dirname + '/../../karma.conf.js',
     singleRun: false
+  }, done)
+
+
+gulp.task 'test:once', (done) ->
+  karma.start({
+    configFile: __dirname + '/../../karma.conf.js',
+    singleRun: true,
+    autoWatch: false
   }, done)

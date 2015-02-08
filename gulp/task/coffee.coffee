@@ -6,7 +6,7 @@ paths = require('../config').paths
 
 
 gulp.task 'coffee', () ->
-  return gulp.src ["#{paths.src.coffee}/**/*"]
+  gulp.src ["#{paths.src.coffee}/**/*"]
     .pipe coffee({bare:true})
     .pipe gulp.dest "#{paths.tmp.js}"
     .pipe uglify({
