@@ -17,11 +17,13 @@ gulp.task 'clean', () ->
     ['clean:css', 'clean:js', 'clean:tmp', 'clean:html', 'clean:image', 'clean:bower']
   )
 
+gulp.task 'javascript', () ->
+  runSequence(['coffee', 'browserify'])
 
 gulp.task 'default', () ->
   runSequence(
     ['clean']
     ['bower', 'imagemin']
-    ['jade', 'stylus', 'coffee']
+    ['jade', 'stylus', 'javascript']
     ['kss']
   )

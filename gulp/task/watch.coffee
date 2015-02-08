@@ -11,7 +11,7 @@ gulp.task 'watch', () ->
     gulp.start ['css', 'imgcp']
 
   watch ["#{paths.src.coffee}/**/*.coffee"], () ->
-    gulp.start ['js', 'test']
+    gulp.start ['coffee', 'browserify']
 
   watch ["#{paths.src.spec}/**/*.coffee", "#{paths.src.spec}/*.coffee"], () ->
     gulp.start 'test'

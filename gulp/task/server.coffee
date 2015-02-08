@@ -9,7 +9,7 @@ gulp.task 'browserSync', () ->
       index: 'index.html'
     },
     startPath: '/html/index.html',
-    files: ['public/html/*.html', 'public/css/*.css', 'public/js/*.js', 'public/image/*'],
+    files: ['public/html/**/*.html', 'public/css/**/*.css', 'public/js/**/*.js', 'public/image/**/*'],
     # browser: ['google chrome', 'firefox', 'safari'],
     port: 8000
   })
