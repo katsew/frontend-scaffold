@@ -1,0 +1,10 @@
+node_modules/
+bower_components/
+public/
+coverage/
+log/
+styleguide/
+libs/
+*.log
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,16 @@
+{
+  "name": "frontscaffold",
+  "version": "0.0.0",
+  "authors": [
+    "Yu KATO <y.katsew@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
