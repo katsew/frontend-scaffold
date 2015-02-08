@@ -35,7 +35,3 @@
     └── spec
 ```
 
-## TODO
-- configure file path correctly
-- update readme
-- update package.json
