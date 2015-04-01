@@ -1,6 +1,6 @@
 paths =
   src:
-    jade: 'assets/jade'
+    jade: 'views/'
     stylus: 'assets/stylus'
     coffee: 'assets/coffee'
     image: 'assets/image'
