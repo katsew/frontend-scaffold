@@ -5,11 +5,11 @@
 .
 ├── assets
 │   ├── coffee
-│   ├── jade
 │   ├── shell
 │   │   └── kss_template_install.cmd
 │   └── stylus
 │       └── sprite
+├── views
 ├── bower.json
 ├── gulp
 │   ├── config.coffee
